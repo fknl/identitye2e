@@ -2,7 +2,7 @@ How to Run
 
 Application uses MongoDb so first need to pull a docker image and run it as a container
 * docker pull mongo
-* docker run --name mongodb -d mongo
+* docker run -p 27017:27017 --name mongodb -d mongo
 
 Then for start the application 
 * mvn spring-boot:run
